@@ -13,7 +13,7 @@ const QuizPage = () => {
   useEffect(() => {
     if (email) {
       const fetchQuestions = async () => {
-        const res = await axios.get("http://localhost:5000/api/quiz/questions");
+        const res = await axios.get("https://quiz-app-75so.onrender.com/api/quiz/questions");
         setQuestions(res.data);
       };
       fetchQuestions();
@@ -31,7 +31,7 @@ const QuizPage = () => {
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else {
-      axios.post("http://localhost:5000/api/quiz/submit", {
+      axios.post("https://quiz-app-75so.onrender.com/api/quiz/submit", {
         email,
         answers,
       });

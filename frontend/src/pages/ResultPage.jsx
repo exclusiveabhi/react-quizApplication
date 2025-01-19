@@ -2,7 +2,7 @@ import React from "react";
 
 const ResultPage = ({ results = [] }) => {
   const correctAnswers = results.filter(result => result.isCorrect).length;
-  const totalQuestions = results.length;
+  // const totalQuestions = results.length;
 
   return (
     <div className="result-page-container">

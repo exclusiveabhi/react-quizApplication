@@ -45,6 +45,7 @@ const EmailForm = ({ onEmailSubmit }) => {
           background-color: #007bff;
           color: white;
           cursor: pointer;
+          width: 110%;
         }
 
         .email-form button:hover {
@@ -52,6 +53,7 @@ const EmailForm = ({ onEmailSubmit }) => {
         }
       `}</style>
       <form className="email-form" onSubmit={handleSubmit}>
+        <center><h2>Quiz Application</h2></center>
         <input
           type="email"
           placeholder="Enter your email"
