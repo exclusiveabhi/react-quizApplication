@@ -46,7 +46,7 @@ const QuizPage = () => {
   return (
     <div>
       <Timer />
-      <center><p>Please wait 5-7 seconds for the questions to appear !</p></center>
+      <center><p>Please wait 4-5 seconds for the questions to appear !</p></center>
       
       {questions.length > 0 && (
         <QuizCard
